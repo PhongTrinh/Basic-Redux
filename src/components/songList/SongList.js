@@ -58,9 +58,11 @@ class SongList extends React.Component {
 }
 
 // mapStateToProps provide us with the store. Every time the state changes this function will be called
-const mapStateToProps = (state) => ({
-  songs: state.songs,
-});
+const mapStateToProps = (state) => {
+  return {
+    songs: state.songs,
+  }
+};
 
 // mapDispatchToProps will provide us with the actions we need to use in our component
 // so we can dispatch them and change our state.
